@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="Quiz.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <div class="conteudo">
+            <h1>Gestão Startups</h1>
+            <span class="qtd"></span>
+            <span class="questao"></span>
+            <div class="respostas"></div>
+            <div class="score">
+                Pontuação: <span id="score-atual">0</span>
+            </div>
+        </div>
+    </main>
+
+    <div class="final" style="display: none;">
+        <span class="resultado"></span>
+        <span class="respostas-corretas"></span>
+        <button id="btn-reiniciar">Reiniciar</button>
+    </div>
+    <div class="pontuacao-final" style="display: none;">
+        <span class="titulo">Pontuação Final:</span>
+        <span class="pontuacao" id="pontuacao-final"></span>
+    </div>
+
+    <script src="Quiz.js"></script>
+</body>
+
+</html>

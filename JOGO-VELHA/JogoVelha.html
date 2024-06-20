@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JOGO DA VELHA</title>
+    <link rel="stylesheet" href="JogoVelha.css">
+    <script src="JogoVelha.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <main>
+        <h2 class="jogador">Jogador Atual: <span id="jogadorAtual">HTML</span></h2>
+        <div class="jogo">
+            <button class="quadrado" data-quadrado="1"></button>
+            <button class="quadrado" data-quadrado="2"></button>
+            <button class="quadrado" data-quadrado="3"></button>
+            <button class="quadrado" data-quadrado="4"></button>
+            <button class="quadrado" data-quadrado="5"></button>
+            <button class="quadrado" data-quadrado="6"></button>
+            <button class="quadrado" data-quadrado="7"></button>
+            <button class="quadrado" data-quadrado="8"></button>
+            <button class="quadrado" data-quadrado="9"></button>
+        </div>
+        <button class="reiniciar" onclick="reiniciarJogo()">Reiniciar</button>
+    </main>
+
+    <div id="escolherModal" class="modal">
+        <div class="modal-content">
+            <h2>Escolha seu jogador</h2>
+            <button class="escolher" onclick="escolherJogador('html')">HTML</button>
+            <button class="escolher" onclick="escolherJogador('css')">CSS</button>
+        </div>
+    </div>
+
+    <div id="mensagemModal" class="modal">
+        <div class="modal-content">
+            <p id="mensagem"></p>
+            <button class="ok" onclick="fecharModal()">OK</button>
+        </div>
+    </div>
+</body>
+
+</html>
